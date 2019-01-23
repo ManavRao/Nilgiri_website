@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nilgiri Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="tabGallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Photo Gallery</h1>
+        <p>An attempt to summarize the fun life in Nilgiri with photographs</p>
+      </div>
+    <div class="row"> 
+        <div class="column">
+          <img src="images/_MG_5014.JPG" id="myImg1" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5028.JPG" id="myImg2" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5052.JPG" id="myImg3" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5022.JPG" id="myImg4" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5082.JPG" id="myImg5" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5109.JPG" id="myImg6" alt="blah blah" style="width:100%;max-width:600px">
+        </div>
+        <div class="column">
+          <img src="images/_MG_5113.JPG" id="myImg7" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5124.JPG" id="myImg8" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5146.JPG" id="myImg9" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5162.JPG" id="myImg10" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5176.JPG" id="myImg11" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5178.JPG" id="myImg12" alt="blah blah" style="width:100%;max-width:600px">
+        </div> 
+        <div class="column">
+          <img src="images/_MG_5189.JPG" id="myImg13" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5193.JPG" id="myImg14" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5201.JPG" id="myImg15" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5209.JPG" id="myImg16" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5215.JPG" id="myImg17" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5222.JPG" id="myImg18" alt="blah blah" style="width:100%;max-width:600px">
+        </div>
+        <div class="column">
+          <img src="images/_MG_5232.JPG" id="myImg19" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5234.JPG" id="myImg20" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5243.JPG" id="myImg21" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5245.JPG" id="myImg22" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5247.JPG" id="myImg23" alt="blah blah" style="width:100%;max-width:600px">
+          <img src="images/_MG_5227.JPG" id="myImg24" alt="blah blah" style="width:100%;max-width:600px">
+        </div>
+      </div>
+<br>
+<br>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div class="footer">
+    <h2>Contact Us</h2>
+  </div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var img1 = document.getElementById('myImg1');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var img4 = document.getElementById('myImg4');
+var img5 = document.getElementById('myImg5');
+var img6 = document.getElementById('myImg6');
+var img7 = document.getElementById('myImg7');
+var img8 = document.getElementById('myImg8');
+var img9 = document.getElementById('myImg9');
+var img10 = document.getElementById('myImg10');
+var img11 = document.getElementById('myImg11');
+var img12 = document.getElementById('myImg12');
+var img13 = document.getElementById('myImg13');
+var img14 = document.getElementById('myImg14');
+var img15 = document.getElementById('myImg15');
+var img16 = document.getElementById('myImg16');
+var img17 = document.getElementById('myImg17');
+var img18 = document.getElementById('myImg18');
+var img19 = document.getElementById('myImg19');
+var img20 = document.getElementById('myImg20');
+var img21 = document.getElementById('myImg21');
+var img22 = document.getElementById('myImg22');
+var img23 = document.getElementById('myImg23');
+var img24 = document.getElementById('myImg24');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img10.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img11.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img12.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img13.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img14.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img15.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img16.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img17.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img18.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img19.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img20.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img21.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img22.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img23.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img24.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+modalImg.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
