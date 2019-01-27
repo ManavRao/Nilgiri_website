@@ -1,10 +1,10 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-	document.getElementById("logo").style.height = "100px";
+  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+	document.getElementById("logo").style.height = "150px";
   } else {
-	  var num = (550 - document.documentElement.scrollTop);
+	  var num = (1000 - document.documentElement.scrollTop);
 	  var n = num.toString() + "px";
 	  
 	document.getElementById("logo").style.height = n;
