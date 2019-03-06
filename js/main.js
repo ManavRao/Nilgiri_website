@@ -6,7 +6,7 @@ function scrollFunction() {
   } else {
 	  var num = (550 - document.documentElement.scrollTop);
 	  var n = num.toString() + "px";
-	  
+
 	document.getElementById("logo").style.height = n;
   }
 }

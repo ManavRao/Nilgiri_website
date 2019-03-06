@@ -1,4 +1,4 @@
-body { 
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,4 +12,41 @@ body {
   top: 0;
   width: 100%;
   transition: 10.5s;
+}
+
+
+/*
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #8e44ad;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.card {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card--content {
+  background-color: #e74c3c;
+  min-width: 200px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
 }
